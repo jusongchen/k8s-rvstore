@@ -7,4 +7,5 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: nginx
+    image: vergeops/versioned-nginx:1.0
+    # image: nginx

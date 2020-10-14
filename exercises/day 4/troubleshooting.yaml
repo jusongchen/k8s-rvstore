@@ -13,7 +13,7 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: ngnix:latest
+    image: nginx:latest
 ---
 kind: Service
 apiVersion: v1
@@ -22,7 +22,7 @@ metadata:
   namespace: troubleshooting
 spec:
   selector:
-    apps: nginx
+    app: nginx
   ports:
   - protocol: TCP
     port: 80
